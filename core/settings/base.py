@@ -25,10 +25,10 @@ DJANGO_APPS = [
 ]
 
 LOCAL_APPS = [
-    "common",
     "accounts",
+    "common",
     "news",
-    "comments",
+    # "comments",
 ]
 
 THIRD_PARTY_APPS = [
@@ -68,7 +68,6 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-                "common.context_processors.common_context",  # agar bo‘lsa
             ],
         },
     },
